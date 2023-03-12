@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+*:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --strong-cyan-shadow-button: hsl(171, 60%, 35%);
+  --light-blue: hsl(233, 100%, 69%);
+  --light-blue-shadow-button: hsl(233, 58%, 45%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --footer-BG: hsl(220, 18%, 97%);
+  --font-size: 18px;
+  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-bai-jamjuree);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: var(--grayish-blue);
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header,
+section {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo-header {
+  width: 7rem;
+  margin: 8em 0 3em 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+button {
+  color: white;
+  font-weight: 600;
+  border: none;
+  width: 300px;
+  max-width: 350px;
+  border-radius: 5em;
+  padding: 15px 20px;
+  font-size: 1.15rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin: 2em 0 10em 0;
+}
+
+.green-button {
+  background-color: var(--strong-cyan);
+  box-shadow: 0px 4px var(--strong-cyan-shadow-button);
+}
+
+.purple-button {
+  background-color: var(--light-blue);
+  box-shadow: 0px 4px var(--light-blue-shadow-button);
+}
+
+.image {
+  max-width: 100%;
+}
+
+section p {
+  margin-bottom: 3em;
+}
+
+.computer,
+.devices {
+  margin-bottom: 3em;
+}
+
+ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.icons {
+  margin-bottom: 1em;
+}
+
+#brands-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  margin-bottom: 8em;
+}
+
+.brands {
+  width: 30vw;
+  max-width: 150px;
+}
+
+#logo-footer {
+  width: 3.5rem;
+  margin: 2.5em 0;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--footer-BG);
+  color: var(--dark-grayish-blue);
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  font-size: 1.1em;
+  margin-bottom: 3em;
+}
+
+#social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.5em;
+  margin-bottom: 4em;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  header,
+  #snippets,
+  #clipboard,
+  #clipboard-ios {
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  button {
+    max-width: 12em;
+  }
+
+  #computer-section {
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 8em;
+    align-items: center;
+  }
+
+  #computer-bp {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  #computer-bp p {
+    margin-top: 0;
+    font-size: 1em;
+    max-width: 350px;
+  }
+
+  #workflow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1000px;
+  }
+
+  #workflow p {
+    margin-top: 0;
+    font-size: 1em;
+  }
+
+  #workflow h3 {
+    margin: 1.5em 0 1em 0;
+  }
+
+  #supercharge ul {
+    display: flex;
+    align-items: baseline;
+    gap: 2em;
+  }
+
+  #workflow p {
+    width: 350px;
+    margin: 0;
+  }
+
+  #brands-banner {
+    flex-direction: row;
+    margin: 8em 0;
+    padding: 0;
+  }
+
+  #clipboard-ios p {
+    margin: 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: fit-content;
+    gap: 20em;
+  }
+
+  footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: left;
+    align-items: center;
+    column-count: 3;
+    column-gap: 20px 50px;
+    margin-bottom: 0;
+    column-gap: 5em;
+  }
+
+  footer li:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+
+  footer li:nth-child(5) {
+    grid-area: 1/3/2/4;
+  }
+
+  #social-medias {
+    margin-bottom: 0;
+    text-align: right;
+    gap: 1.5em;
+  }
+
+  #footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10em;
+  }
+}
